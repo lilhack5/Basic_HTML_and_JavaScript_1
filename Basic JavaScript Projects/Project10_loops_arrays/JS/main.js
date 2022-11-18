@@ -14,7 +14,7 @@ var Content = "";
 var Y;
 function for_Loop() {
     for (Y = 0; Y < Instruments.length; Y++) {
-        Content += Instruments[Y] = "<br>";
+        Content += Instruments[Y] + "<br>";
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
@@ -56,7 +56,7 @@ let car = {
     model: "Viper ",
     year: "2022 ",
     color: "teal ",
-    description : function() {
+    description: function () {
         return "The car is a " + this.year + this.color + this.make + this.model;
     }
 };
